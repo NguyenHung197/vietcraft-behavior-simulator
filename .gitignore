@@ -12,3 +12,4 @@ logs/
 tools/f30-seed.js
 guard.local.json
 .env
+config.local.json

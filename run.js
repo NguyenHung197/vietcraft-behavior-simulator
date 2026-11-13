@@ -1,3 +1,4 @@
+const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
@@ -8,7 +9,11 @@ const ctx = {
   stateFile: path.join(__dirname, 'state.json'),
 };
 
-const ACTIONS = ['start', 'status', 'stop', 'clean', 'once', 'ai-check'];
+// Machine-specific overrides (shop boosts, backend address) stay out of the repo.
+const LOCAL = path.join(__dirname, 'config.local.json');
+if (fs.existsSync(LOCAL)) Object.assign(ctx.config, JSON.parse(fs.readFileSync(LOCAL, 'utf8')));
+
+const ACTIONS =['start', 'status', 'stop', 'clean', 'once', 'ai-check'];
 const [action, ...args] = process.argv.slice(2);
 if (args.includes('--fast')) ctx.config.fast = true;
 
