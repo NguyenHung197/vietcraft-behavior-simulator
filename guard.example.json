@@ -1,0 +1,4 @@
+{
+  "allowed": "<id of the personal Atlas cluster, as it appears in MONGO_URI>",
+  "forbidden": "<id of the shared Atlas cluster that must never be written to>"
+}

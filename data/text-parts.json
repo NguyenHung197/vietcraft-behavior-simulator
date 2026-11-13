@@ -1,0 +1,61 @@
+{
+  "review": {
+    "pos": {
+      "open": ["", "Mua về thấy ưng quá", "Hàng nhận rồi nè", "Lần đầu mua bên shop này", "Đặt tối qua sáng nay nhận luôn",
+        "Mình khá kỹ tính nhưng", "Ưng ý quá shop ơi", "Đúng như mong đợi"],
+      "aspect": ["vải mát, mặc cả ngày không bí", "form đẹp, mặc lên tôn dáng", "màu y hình, không bị lệch tông",
+        "đường may chắc chắn", "in sắc nét, không bong tróc", "size chuẩn theo bảng size", "giao hàng nhanh hơn mình nghĩ",
+        "đóng gói cẩn thận, có túi chống sốc", "shop rep tin nhắn nhanh", "giá rất hợp lý so với chất lượng",
+        "giặt không ra màu, không xù lông", "vải dày dặn, cầm chắc tay", "màu sắc tươi, lên hình đẹp",
+        "đường kim mũi chỉ đều", "mặc đi làm đi chơi đều ổn", "chất vải mềm, không gây ngứa da",
+        "hàng giống hệt ảnh shop đăng", "túi đựng đẹp, quai chắc", "có tặng kèm thiệp nhỏ dễ thương",
+        "shop tư vấn size rất kỹ", "sp đẹp, ko chê vào đâu", "giao đc nhanh, đóng gói ok",
+        "bình gốm men đẹp, không sứt mẻ"],
+      "close": ["", "Sẽ ủng hộ shop tiếp", "10 điểm nha", "Lần sau mình mua tiếp", "Cảm ơn shop nhiều",
+        "Recommend cho mọi người", "Shop làm ăn uy tín ghê", "Sẽ giới thiệu bạn bè"]
+    },
+    "neu": {
+      "open": ["", "Hàng tạm ổn", "Nhận hàng rồi", "Mua theo đợt sale nên cũng ok", "Nói chung không tệ",
+        "So với giá thì cũng được", "Mình đánh giá khách quan nha", "Không có gì đặc biệt"],
+      "aspect": ["giao hơi lâu một chút", "màu thực tế hơi nhạt hơn ảnh", "đường may ổn nhưng chưa thật kỹ",
+        "size vừa nhưng ôm hơi chật vai", "vải mỏng vừa phải, mặc mùa hè được", "đóng gói bình thường, không cầu kỳ",
+        "giá hơi cao so với mặt bằng chung", "in ổn nhưng chữ hơi nhỏ", "shop phản hồi hơi chậm",
+        "giặt đầu tiên hơi ra màu chút", "form hơi rộng so với mình nghĩ", "chất lượng tầm giá",
+        "mùi vải hơi nặng khi mới mở hộp", "mua về dùng tạm được", "hộp hơi móp góc nhưng hàng vẫn nguyên",
+        "màu hơi khác ảnh một tí", "quai túi hơi yếu", "phụ kiện đi kèm hơi ít", "vải ổn, có vài chỗ chỉ thừa",
+        "đẹp nhưng cần giặt kỹ lần đầu", "ship thường nên đến hơi trễ"],
+      "close": ["", "Nhìn chung cũng ok", "Chắc sẽ cân nhắc mua lại", "Trừ 1 sao vì mấy chỗ này",
+        "Không biết lần sau thế nào", "Mong shop cải thiện thêm", "Cũng không tệ lắm", "Đánh giá trung bình nha"]
+    },
+    "neg": {
+      "open": ["", "Thất vọng quá shop ơi", "Mình không hài lòng lắm", "Mua mà hối hận", "Hàng nhận về không như kỳ vọng",
+        "Nói thật là không nên mua", "Hơi tiếc tiền", "Shop làm mình bực mình"],
+      "aspect": ["vải mỏng dính, nhìn xuyên thấu", "màu khác ảnh khá nhiều", "đường may bung chỉ ngay lần mặc đầu",
+        "size không đúng bảng size shop gửi", "giao chậm cả tuần mới tới", "hàng có vết xước ở góc",
+        "in bị lệch, nhìn rất xấu", "đóng gói sơ sài, hộp bị móp", "shop không trả lời tin nhắn",
+        "nhận sai mẫu so với đơn đặt", "mùi hóa chất nồng khi mới mở", "giặt một lần là phai màu",
+        "chất liệu không giống mô tả", "quai túi đứt sau vài ngày dùng", "thiếu một món trong đơn",
+        "keo dán bị bong ra", "đặt 2 mà chỉ nhận được 1", "hàng ko đúng như quảng cáo",
+        "giá đắt mà chất lượng kém", "màu bị loang khi giặt", "nhắn shop mà ko thấy phản hồi"],
+      "close": ["", "Mong shop kiểm tra lại", "Mình sẽ không mua lại", "Ai định mua thì cân nhắc kỹ",
+        "Ko nên mua nha", "Shop cần xem lại quy trình đóng gói", "Mong được hỗ trợ đổi hàng",
+        "Hy vọng lần sau tốt hơn"]
+    }
+  },
+  "seller": {
+    "open": ["Chào bạn!", "Dạ shop chào bạn ạ.", "Cảm ơn bạn đã nhắn shop.", "Dạ bạn ơi,", "Shop chào bạn nha!",
+      "Cảm ơn bạn đã ủng hộ shop ạ.", "Dạ vâng ạ."],
+    "close": ["", "Shop cảm ơn bạn nhiều nha 😊", "Có gì cần hỗ trợ bạn cứ nhắn shop nhé.",
+      "Chúc bạn một ngày vui vẻ ạ ❤️", "Shop luôn sẵn sàng hỗ trợ bạn 🥰", "Cảm ơn bạn đã tin tưởng shop nha!",
+      "Bạn yên tâm, shop kiểm tra kỹ nha."]
+  },
+  "buyer": {
+    "close": ["ạ", "nhé shop", "shop ơi ạ", "cảm ơn shop nha", "shop check giúp mình với", "mình chờ tin shop nha",
+      "ok shop nhé"]
+  },
+  "emoji": {
+    "pos": ["😍", "🥰", "👍", "❤️", "🔥"],
+    "neu": ["🙂", "😐", "🤔"],
+    "neg": ["😞", "😤", "😢"]
+  }
+}

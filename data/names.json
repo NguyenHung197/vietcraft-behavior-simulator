@@ -1,0 +1,18 @@
+{
+  "last": [["Nguyễn", 38], ["Trần", 11], ["Lê", 10], ["Phạm", 7], ["Hoàng", 5], ["Huỳnh", 5],
+    ["Phan", 4], ["Vũ", 4], ["Võ", 4], ["Đặng", 3], ["Bùi", 2], ["Đỗ", 2], ["Hồ", 2], ["Ngô", 2],
+    ["Dương", 1], ["Lý", 1], ["Trịnh", 1], ["Đinh", 1], ["Mai", 1], ["Tô", 1], ["Lâm", 1], ["Trương", 1],
+    ["Đoàn", 1], ["Lương", 1], ["Cao", 1], ["Hà", 1], ["Châu", 0.5], ["Thái", 0.5], ["Tạ", 0.5], ["Quách", 0.5]],
+  "middleMale": ["Văn", "Hữu", "Đức", "Minh", "Quốc", "Thanh", "Gia", "Hoàng", "Tuấn", "Công", "Anh", "Bảo",
+    "Đình", "Xuân", "Trọng", "Nhật", "Thành", "Ngọc", "Hải", "Tấn"],
+  "middleFemale": ["Thị", "Ngọc", "Thu", "Thanh", "Mỹ", "Kim", "Phương", "Hồng", "Thùy", "Khánh", "Bảo", "Diệu",
+    "Minh", "Hoài", "Tường", "Bích", "Quỳnh", "Lan", "Gia", "Ánh"],
+  "firstMale": ["Anh", "Bình", "Cường", "Dũng", "Duy", "Đạt", "Hải", "Hiếu", "Hùng", "Huy", "Khang",
+    "Khoa", "Long", "Minh", "Nam", "Nghĩa", "Phong", "Phúc", "Quân", "Sơn", "Tài", "Thắng", "Thành",
+    "Tiến", "Toàn", "Trung", "Tuấn", "Tùng", "Việt", "Vinh", "An", "Bảo", "Khôi", "Kiên", "Lâm", "Lộc",
+    "Nhân", "Nhật", "Quang", "Tâm", "Thiện", "Thịnh", "Trí", "Triết", "Vũ", "Hậu", "Đăng", "Hoàng"],
+  "firstFemale": ["An", "Anh", "Chi", "Diệp", "Dung", "Giang", "Hà", "Hạnh", "Hân", "Hoa", "Hương",
+    "Lan", "Linh", "Ly", "Mai", "My", "Nga", "Ngân", "Nhi", "Nhung", "Oanh", "Phương", "Quyên",
+    "Thảo", "Thư", "Trang", "Trâm", "Trinh", "Vy", "Yến", "Châu", "Đào", "Hằng", "Huyền", "Khuê", "Loan",
+    "Ngọc", "Nhàn", "Quỳnh", "Tâm", "Thy", "Tiên", "Tú", "Uyên", "Vân", "Xuân", "Ánh", "Hiền"]
+}

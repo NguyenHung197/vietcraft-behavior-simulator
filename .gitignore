@@ -1,0 +1,13 @@
+state.json
+ledger.json
+f30-test-ledger.json
+run.lock
+stop.flag
+*.tmp
+*.csv
+node_modules/
+tools/check-*.js
+tools/plan12-fakes.js
+logs/
+tools/f30-seed.js
+guard.local.json
