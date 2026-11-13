@@ -1,6 +1,7 @@
 {
   "baseUrl": "http://localhost:8080",
   "dbName": "vietcraft",
+  "uploadsDir": "../BE/uploads",
   "seed": 20260101,
   "tickSeconds": 20,
   "maxConcurrentSessions": 10,

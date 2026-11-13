@@ -1,0 +1,17 @@
+{
+  "name": "vietcraft-behavior-simulator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Simulates guest, buyer, seller and admin behavior on the VietCraft marketplace",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node run.js start",
+    "status": "node run.js status",
+    "stop": "node run.js stop"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^5.9.2"
+  }
+}

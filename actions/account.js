@@ -1,13 +1,10 @@
-const path = require('path');
-const { createRequire } = require('module');
+const bcrypt = require('bcryptjs');
 const { ObjectId } = require('../lib/db');
 const { api } = require('../lib/http');
 const { makeProfile, passwordFor } = require('../lib/profile');
 const { fakeIp } = require('../lib/ip');
 const ledgerLib = require('../lib/ledger');
 const { track } = require('../lib/runtime');
-
-const bcrypt = createRequire(path.join(__dirname, '..', '..', 'BE', 'package.json'))('bcryptjs');
 
 // Each buyer keeps one fake IP; older buyers get one on first use.
 const ipOf = (rt, buyerId) => {

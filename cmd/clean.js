@@ -64,7 +64,7 @@ async function checkSnapshots(db, ledger, errors) {
 }
 
 function removeFiles(ctx, ledger, errors) {
-  const base = path.resolve(ctx.root, 'BE', 'uploads') + path.sep;
+  const base = path.resolve(__dirname, '..', ctx.config.uploadsDir) + path.sep;
   for (const rel of ledger.files) {
     const abs = path.resolve(ctx.root, rel);
     if (!abs.startsWith(base)) { errors.push(`file outside uploads: ${rel}`); continue; }

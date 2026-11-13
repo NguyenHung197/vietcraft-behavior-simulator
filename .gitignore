@@ -11,3 +11,4 @@ tools/plan12-fakes.js
 logs/
 tools/f30-seed.js
 guard.local.json
+.env

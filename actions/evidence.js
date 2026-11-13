@@ -27,11 +27,11 @@ async function productPhoto(rt, orderId) {
 async function writeEvidence(rt, orderId) {
   const { ext, buf } = (await productPhoto(rt, orderId)) || { ext: 'png', buf: PNG };
   const name = `sim_${orderId}.${ext}`;
-  const rel = path.join('BE', 'uploads', 'refunds', name);
-  ledgerLib.recordFile(rt.ledger, rel);
+  const abs = path.resolve(__dirname, '..', rt.cfg.uploadsDir, 'refunds', name);
+  ledgerLib.recordFile(rt.ledger, path.relative(rt.ctx.root, abs));
   ledgerLib.save(rt.ctx.ledgerFile, rt.ledger);
-  fs.mkdirSync(path.dirname(path.join(rt.ctx.root, rel)), { recursive: true });
-  fs.writeFileSync(path.join(rt.ctx.root, rel), buf);
+  fs.mkdirSync(path.dirname(abs), { recursive: true });
+  fs.writeFileSync(abs, buf);
   return `/uploads/refunds/${name}`;
 }
 
