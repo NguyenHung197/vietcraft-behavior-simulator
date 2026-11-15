@@ -27,7 +27,7 @@ async function signup(rt) {
   track(rt, 'users', _id);
   await users.insertOne({
     _id, email: p.email,
-    password_hash: bcrypt.hashSync(passwordFor(rt.secrets.jwtSecret, p.email), 12),
+    password_hash: bcrypt.hashSync(passwordFor(rt.secrets.passwordSecret, p.email), 12),
     role: 'BUYER', is_locked: false, full_name: p.full_name, avatar: '', phone: p.phone,
     is_phone_verified: false, is_email_verified: true, seller_status: 'NONE',
     addresses: abandoned ? [] : [{ _id: new ObjectId(), ...p.address, is_default: true }],
@@ -46,7 +46,7 @@ async function signup(rt) {
 async function login(rt, buyerId) {
   const b = rt.state.buyers[buyerId];
   const r = await api(rt, 'POST', '/auth/login', {
-    body: { email: b.email, password: passwordFor(rt.secrets.jwtSecret, b.email) }, ip: ipOf(rt, buyerId),
+    body: { email: b.email, password: passwordFor(rt.secrets.passwordSecret, b.email) }, ip: ipOf(rt, buyerId),
   });
   if (!r.token) throw new Error('login: no token in response');
   rt.tokens[buyerId] = r.token;

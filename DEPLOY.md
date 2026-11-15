@@ -7,5 +7,5 @@
 5. **Keep it running.** `TZ=Asia/Ho_Chi_Minh pm2 start run.js --name behavior-sim --kill-timeout 60000 -- start`, then `pm2 save && pm2 startup`, or use a systemd service. `--kill-timeout` gives the tool time to finish running sessions and save its state.
 6. **One instance per database.** Do not run a second copy against the same database from another machine.
 7. **State belongs to one database.** `state.json` and `ledger.json` describe the buyers and orders of the database they were created on. Start a new database with no state files. When moving the tool to another machine for the same database, copy both files first so the buyers are kept and `clean` can still undo everything.
-8. **JWT_SECRET must match the backend's.** Simulated buyers' passwords are derived from it; if it changes, existing simulated buyers cannot log in.
+8. **JWT_SECRET must match the backend's.** Simulated buyers' passwords are derived from it; if it changes, put the old value in `SIM_PASSWORD_SECRET` so existing simulated buyers can still log in.
 9. **F30 also needs AI-Analysic running** (the backend job at 00:30 UTC calls it); otherwise no alert is produced.
