@@ -13,7 +13,14 @@ function buyMult(rt, b, now = new Date()) {
 function cartMult(rt, b, product) {
   const m = rt.catalog.medianPrice;
   const price = m && product.price ? Math.min(Math.max((m / product.price) ** (ELASTIC[b.persona] ?? 0.6), 0.3), 2) : 1;
-  return price * (0.7 + 0.6 * (product.quality ?? 0.5));
+  const shop = rt.cfg?.shopBuyBoost?.[product.shopId] ?? 1;
+  return price * (0.7 + 0.6 * (product.quality ?? 0.5)) * tempBoost(rt.cfg) * shop;
+}
+
+// Optional config.buyBoost { mult, until }: a temporary add-to-cart boost that expires by itself.
+function tempBoost(cfg, now = Date.now()) {
+  const b = cfg?.buyBoost;
+  return b && now < Date.parse(b.until) ? b.mult : 1;
 }
 
 module.exports = { buyMult, cartMult };

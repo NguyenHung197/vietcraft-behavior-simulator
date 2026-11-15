@@ -76,7 +76,7 @@ Without `ledger.json`, `clean` cannot undo anything. Back up both JSON files bef
 
 All numbers live in `config.json`: tick length, guests per hour, add-to-cart / checkout / refund rates, shop working hours, the holiday calendar and the daily limits.
 
-Machine-specific values go in `config.local.json` (not committed); its top-level keys replace those of `config.json`. Example: `{ "shopBoost": { "<shop id>": 5 } }` multiplies how often that shop's products are picked.
+Machine-specific values go in `config.local.json` (not committed); its top-level keys replace those of `config.json`. Example: `{ "shopBoost": { "<shop id>": 5 } }` multiplies how often that shop's products are picked; `{ "shopBuyBoost": { "<shop id>": 3 } }` multiplies the add-to-cart chance of that shop's products, so it sells more without more views.
 
 ## Data safety
 
