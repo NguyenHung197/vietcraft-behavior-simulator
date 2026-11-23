@@ -24,7 +24,6 @@ async function review(rt, { orderId, mood }) {
   const doc = await rt.db.collection('orders').findOne({ _id: oid(orderId) }, { projection: { order_status: 1, refund_status: 1 } });
   if (!doc || doc.order_status !== 'DELIVERED') return;
   for (const productId of o.products) {
-    if (productId !== o.products[0] && !rt.rng.chance(0.5)) continue;
     const rating = rt.rng.weighted(starsFor(rt, productId, mood));
     const comment = rt.rng.chance(0.2) ? '' : reviewText(rt.rng, rt.data.texts, rt.data.parts, rating);
     await asBuyer(rt, o.buyerId, (token) => api(rt, 'POST', '/reviews', {
