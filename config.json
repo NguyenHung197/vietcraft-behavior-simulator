@@ -34,7 +34,7 @@
     "returnerUnhappyMult": 2,
     "returnerChangeMind": 0.1,
     "unhappyOutcome": { "reviewRefund": 30, "refundOnly": 35, "reviewOnly": 25, "nothing": 10 },
-    "happyReviewMin": [120, 7200],
+    "happyReviewMin": [60, 2880],
     "unhappyMin": [30, 120],
     "reviewEditMin": [60, 1440],
     "refundDays": 6.9,
@@ -81,7 +81,7 @@
     "paySuccess": 0.8,
     "cancelBeforeShip": 0.05,
     "confirmDelivery": 0.7,
-    "review": 0.45,
+    "review": 0.75,
     "dispute": 0.5,
     "coupon": 0.3,
     "couponEnabled": true
