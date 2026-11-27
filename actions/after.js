@@ -7,18 +7,20 @@ const { asBuyer } = require('./account');
 const { sellerToken } = require('./seller');
 const { reviewText } = require('../lib/text');
 
+// Only 4-5 star reviews are posted; unhappy buyers stay silent.
 const STARS = {
-  good: [[5, 70], [4, 20], [3, 6], [2, 2], [1, 2]],
-  mid: [[5, 55], [4, 25], [3, 10], [2, 5], [1, 5]],
-  bad: [[5, 25], [4, 25], [3, 20], [2, 15], [1, 15]],
+  good: [[5, 80], [4, 20]],
+  mid: [[5, 65], [4, 35]],
+  bad: [[5, 50], [4, 50]],
 };
-const MOOD = { good: [[5, 65], [4, 28], [3, 7]], bad: [[1, 55], [2, 35], [3, 10]] };
+const MOOD = { good: [[5, 75], [4, 25]] };
 const LOST = ['SELLER_REJECTED', 'DISPUTED', 'ADMIN_REJECTED'];
 const tier = (q) => (q >= 0.7 ? 'good' : q < 0.25 ? 'bad' : 'mid');
 const starsFor = (rt, productId, mood) => (mood ? MOOD[mood]
   : STARS[tier(rt.catalog.products.find((p) => p.id === productId)?.quality ?? 0.5)]);
 
 async function review(rt, { orderId, mood }) {
+  if (mood === 'bad') return;
   const o = rt.state.orders[orderId];
   const b = rt.state.buyers[o.buyerId];
   const doc = await rt.db.collection('orders').findOne({ _id: oid(orderId) }, { projection: { order_status: 1, refund_status: 1 } });
